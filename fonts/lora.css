@@ -1,0 +1,7 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+/* Font Class */
+.font-lora {
+    font-family: 'Lora', serif;
+}

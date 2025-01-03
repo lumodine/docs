@@ -1,0 +1,7 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Font Class */
+.font-playfair-display {
+    font-family: 'Playfair Display', serif;
+}

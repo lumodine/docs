@@ -1,0 +1,7 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Font Class */
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+}

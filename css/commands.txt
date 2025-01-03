@@ -1,0 +1,3 @@
+sass --no-source-map --style=compressed type.scss type.css
+
+sass --no-source-map --style=compressed theme.scss theme.css

@@ -1,0 +1,12 @@
+@function grid-span($span) {
+	@return span #{$span} / span #{$span};
+}
+
+@for $row from 1 through 3 {
+	@for $col from 1 through 2 {
+		.row-#{$row}-col-#{$col} {
+			grid-row: grid-span($row);
+			grid-column: grid-span($col);
+		}
+	}
+}

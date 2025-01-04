@@ -1,0 +1,51 @@
+services:
+  api:
+    container_name: api
+    image: api
+    build:
+      context: ../api
+      dockerfile: Dockerfile
+    ports:
+      - "2000:2000"
+
+  dashboard:
+    container_name: dashboard
+    image: dashboard
+    build:
+      context: ../dashboard
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+  qr-menu:
+    container_name: qr-menu
+    image: qr-menu
+    build:
+      context: ../qr-menu
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    depends_on:
+      - api
+
+  landing:
+    container_name: landing
+    image: landing
+    build:
+      context: ../landing
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+
+  qr:
+    container_name: qr
+    image: qr
+    build:
+      context: ../qr
+      dockerfile: Dockerfile
+    ports:
+      - "7000:7000"
+    depends_on:
+      - api
